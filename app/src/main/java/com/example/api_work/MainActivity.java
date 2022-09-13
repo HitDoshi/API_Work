@@ -64,8 +64,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void loginUser(LoginRequest loginRequest) {
-        Call<LoginResponse> registerresponscall = ApiClient.getservice().userLogin(loginRequest);
-        registerresponscall.enqueue(new Callback<LoginResponse>() {
+        Call<LoginResponse> loginResponseCall = ApiClient.getservice().userLogin(loginRequest);
+        loginResponseCall.enqueue(new Callback<LoginResponse>() {
             @Override
             public void onResponse(Call<LoginResponse> call, Response<LoginResponse> response) {
                 String msg = null;
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
                         Data data = response.body().getData().clone()[0];
                         msg = "Hello" + data.getName();
 
-                        Log.d("Hit", msg);
+                        Log.d("Message", msg);
                         startActivity(new Intent(getApplicationContext(),DashBoardActivity.class));
                         finish();
                     }
@@ -92,13 +92,14 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
                 }
 
-                Log.d("Hit",msg);
+                Log.d("Message",msg);
             }
 
             @Override
             public void onFailure(Call<LoginResponse> call, Throwable t) {
                 String msg = t.getLocalizedMessage();
                 Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
+                Log.d("Message",msg);
             }
         });
     }

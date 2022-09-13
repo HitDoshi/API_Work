@@ -1,95 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_gravity="center"
-    android:gravity="center"
-    android:orientation="vertical"
-    tools:context=".RegisterActivity">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="User Registration"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
         android:gravity="center"
-        android:textSize="35dp">
+        android:orientation="vertical"
+        tools:context=".RegisterActivity">
 
-    </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Registration"
+            android:gravity="center"
+            android:textSize="35dp">
 
-    <EditText
-        android:id="@+id/username"
-        android:hint="User Name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        </TextView>
 
-    <!--    <EditText-->
-    <!--        android:id="@+id/etb"-->
-    <!--        android:hint="Mobile No"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content" />-->
+        <EditText
+            android:id="@+id/username"
+            android:hint="User Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
+        <EditText
+            android:id="@+id/mobile_no"
+            android:hint="Mobile No"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-    <EditText
-        android:hint="Email"
-        android:id="@+id/email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        <EditText
+            android:hint="Email"
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-    <EditText
-        android:id="@+id/password"
-        android:hint="Password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/password"
+            android:hint="Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-    <EditText
-        android:id="@+id/cpassword"
-        android:hint="Confarm Password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/c_password"
+            android:hint="Confarm Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-    <!--    <EditText-->
-    <!--        android:id="@+id/etf"-->
-    <!--        android:hint="Address"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content" />-->
+        <EditText
+            android:id="@+id/address"
+            android:hint="Address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-    <!--    <EditText-->
-    <!--        android:id="@+id/etg"-->
-    <!--        android:hint="Company Name"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content" />-->
+        <EditText
+            android:id="@+id/company_Name"
+            android:hint="Company Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-    <!--    <EditText-->
-    <!--        android:hint="Whatsapp No"-->
-    <!--        android:id="@+id/eth"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content" />-->
+        <EditText
+            android:hint="Whatsapp No"
+            android:id="@+id/whatsapp_no"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-    <!--    <EditText-->
-    <!--        android:hint="Country"-->
-    <!--        android:id="@+id/eti"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content" />-->
-
-
-    <!--    <CheckBox-->
-    <!--        android:id="@+id/checkBox"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:text="IsActive"-->
-    <!--        android:checked="true"/>-->
-
-    <Button
-        android:id="@+id/rsubmit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:backgroundTint="@color/cardview_dark_background"
-        android:text="Submit"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        android:textStyle="bold"></Button>
+        <EditText
+            android:hint="Country"
+            android:id="@+id/country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+        <!--    <CheckBox-->
+        <!--        android:id="@+id/checkBox"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:text="IsActive"-->
+        <!--        android:checked="true"/>-->
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"></Button>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>
