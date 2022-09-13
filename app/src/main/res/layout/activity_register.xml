@@ -65,7 +65,6 @@
     <!--        android:id="@+id/eth"-->
     <!--        android:layout_width="match_parent"-->
     <!--        android:layout_height="wrap_content" />-->
-
     <!--    <EditText-->
     <!--        android:hint="Country"-->
     <!--        android:id="@+id/eti"-->
