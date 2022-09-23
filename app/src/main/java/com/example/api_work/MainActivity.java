@@ -75,10 +75,14 @@ public class MainActivity extends AppCompatActivity {
                         msg = "Successful Login";
 
                         Data data = response.body().getData().clone()[0];
-                        msg = "Hello" + data.getName();
+                        msg = "Hello " + data.getName();
+
+                        Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_SHORT).show();
 
                         Log.d("Message", msg);
-                        startActivity(new Intent(getApplicationContext(),DashBoardActivity.class));
+                        Intent intent = new Intent(getApplicationContext(),DashBoardActivity.class);
+                        intent.putExtra("Name",msg);
+                        startActivity(intent);
                         finish();
                     }
                     else
