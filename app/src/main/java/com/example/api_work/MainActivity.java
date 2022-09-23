@@ -60,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
     }
 
     private void loginUser(LoginRequest loginRequest) {
